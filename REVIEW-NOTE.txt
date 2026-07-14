@@ -1,0 +1,1 @@
+Resubmission after reviewer feedback. We expanded the Privacy Policy and Terms of Service, added the same app icon to the website header and browser favicon on all pages, and updated the demo flow to clearly show the TikTok Sandbox/Mockup integration and each requested scope. The unused video.list scope was removed.

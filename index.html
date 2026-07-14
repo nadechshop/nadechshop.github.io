@@ -1,145 +1,100 @@
 <!doctype html>
 <html lang="th">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Product SEO</title>
-  <meta name="description" content="AI Product SEO helps generate SEO-friendly product titles, descriptions, keywords, and hashtags for TikTok Shop." />
-  <style>
-    :root{--bg:#f7f8ff;--card:#fff;--text:#111827;--muted:#6b7280;--line:#e5e7eb;--pink:#ff2d55;--blue:#3b82f6;--purple:#6d28d9}
-    *{box-sizing:border-box}body{margin:0;font-family:Arial,system-ui,sans-serif;background:linear-gradient(135deg,#fff,#f2f5ff);color:var(--text)}
-    header{height:64px;display:flex;justify-content:space-between;align-items:center;padding:0 32px;border-bottom:1px solid var(--line);background:#ffffffcc;position:sticky;top:0;z-index:10}
-    .brand{font-weight:800;font-size:20px}.btn{border:0;border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer}
-    .btn-dark{background:#0f172a;color:white}.btn-main{background:linear-gradient(90deg,var(--pink),var(--blue));color:white;width:100%;font-size:16px}
-    .btn-light{background:#fff;border:1px solid var(--line);color:#111827}.wrap{max-width:1100px;margin:0 auto;padding:40px 20px}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:36px 0}.hero h1{font-size:46px;line-height:1.05;margin:0 0 16px}
-    .hero p{font-size:18px;color:var(--muted);line-height:1.7}.points{display:grid;gap:10px;margin-top:18px}.point{display:flex;gap:10px;align-items:center;font-weight:700}
-    .check{color:#4f46e5}.mock{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 24px 60px #0001}
-    .chart{height:260px;border-radius:20px;background:linear-gradient(135deg,#10172a,#1e293b);display:flex;align-items:end;gap:18px;padding:28px;justify-content:center}
-    .bar{width:46px;background:linear-gradient(#a78bfa,#ec4899);border-radius:10px 10px 0 0}.app{display:none;max-width:920px;margin:0 auto}
-    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 10px 30px #0000000d;margin-bottom:18px}
-    label{display:block;margin:14px 0 8px;font-weight:700}.req{color:#ef4444}input,textarea{width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:12px;font-size:16px}
-    textarea{min-height:110px;resize:vertical}.tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin-bottom:16px;overflow:auto}
-    .tab{padding:12px 14px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}.tab.active{color:#4f46e5;border-color:#4f46e5;font-weight:800}
-    .resultBox{border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0;background:#fff}.chips{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{background:#f1f5f9;border:1px solid #e2e8f0;padding:8px 10px;border-radius:999px;font-size:14px}.topuser{display:flex;gap:10px;align-items:center}
-    .avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#ff2d55,#3b82f6)}.toast{display:none;position:fixed;right:20px;bottom:20px;background:#ecfdf5;border:1px solid #86efac;color:#166534;padding:14px 18px;border-radius:12px;font-weight:700}
-    .modal{display:none;position:fixed;inset:0;background:#0008;align-items:center;justify-content:center;z-index:50}.modalCard{background:#fff;border-radius:18px;padding:24px;max-width:420px;width:92%;text-align:center}
-    .loader{margin:18px auto;width:42px;height:42px;border:5px solid #ddd;border-top-color:#6d28d9;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-    footer{text-align:center;color:var(--muted);padding:30px}.links a{color:#4f46e5;margin:0 8px}
-    @media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:34px}header{padding:0 16px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Product SEO</title>
+<meta name="description" content="AI Product SEO creates product titles, descriptions, keywords and hashtags for TikTok Shop sellers.">
+<link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="app-icon.png">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#111827;--muted:#667085;--line:#e5e7eb;--pink:#fe2c55;--blue:#1677ff;--green:#16a34a}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,system-ui,sans-serif;background:linear-gradient(135deg,#fff,#f2f5ff);color:var(--text);line-height:1.65}
+header{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 24px;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}.brand img{width:48px;height:48px;border-radius:12px;object-fit:cover}
+nav a{margin-left:14px;color:#344054;text-decoration:none;font-weight:700}
+main{max-width:980px;margin:auto;padding:36px 20px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 16px 40px #0000000c;margin-bottom:20px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center}.hero h1{font-size:46px;line-height:1.08;margin:0 0 12px}.muted{color:var(--muted)}
+.btn{border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer}.btn-main{background:linear-gradient(90deg,var(--pink),var(--blue));color:#fff}.btn-dark{background:#111827;color:#fff}
+input,textarea{width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:12px;font-size:16px}label{display:block;font-weight:800;margin:14px 0 7px}
+.result{border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#f2f4f7;padding:8px 11px;border-radius:999px}
+.profile{display:grid;grid-template-columns:80px 1fr;gap:16px;align-items:center}.profile img{width:80px;height:80px;border-radius:50%;object-fit:cover}
+.badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#ecfdf3;color:#067647;font-weight:800;font-size:13px}
+.notice{padding:14px;border-radius:12px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412}
+footer{text-align:center;padding:28px;color:var(--muted)}footer a{color:#475467;margin:0 8px}
+.hidden{display:none}.loader{width:40px;height:40px;border:5px solid #ddd;border-top-color:#6d28d9;border-radius:50%;animation:spin 1s linear infinite;margin:16px auto}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:760px){header{padding:12px}.hero{grid-template-columns:1fr}.hero h1{font-size:34px}nav{display:none}}
+</style>
 </head>
 <body>
 <header>
-  <div class="brand">AI Product SEO</div>
+  <div class="brand"><img src="app-icon.png" alt="AI Product SEO app icon"><span>AI Product SEO</span></div>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
   <button id="loginBtn" class="btn btn-dark">Login with TikTok</button>
-  <div id="userBox" class="topuser" style="display:none"><div class="avatar"></div><b>nadechshop</b></div>
 </header>
+<main>
+<section id="home" class="hero">
+  <div>
+    <h1>สร้าง SEO สำหรับสินค้าและ TikTok Shop</h1>
+    <p class="muted">สร้างชื่อสินค้า คำอธิบาย คีย์เวิร์ด และแฮชแท็ก เพื่อช่วยให้ผู้ขายเตรียมคอนเทนต์สินค้าได้รวดเร็วขึ้น</p>
+    <div class="notice"><b>Review demo:</b> เว็บไซต์นี้แสดงขั้นตอนการเชื่อมต่อ TikTok Sandbox/Mockup และการใช้ข้อมูลโปรไฟล์ที่ผู้ใช้อนุญาต</div>
+    <br><button id="startBtn" class="btn btn-main">เริ่มต้นใช้งาน</button>
+  </div>
+  <div class="card" style="text-align:center"><img src="app-icon.png" alt="AI Product SEO icon" style="width:220px;height:220px;border-radius:28px;object-fit:cover"><h2>AI Product SEO</h2></div>
+</section>
 
-<main class="wrap">
-  <section id="home" class="hero">
+<section id="loginSuccess" class="card hidden">
+  <h2>เชื่อมต่อ TikTok Sandbox สำเร็จ</h2>
+  <p class="muted">ตัวอย่างนี้แสดงข้อมูลจาก scope <code>user.info.profile</code> ที่ผู้ใช้อนุญาต</p>
+  <div class="profile">
+    <img src="app-icon.png" alt="Sandbox profile">
     <div>
-      <h1>AI Product SEO</h1>
-      <p>สร้างชื่อสินค้า คำอธิบาย คีย์เวิร์ด และแฮชแท็ก สำหรับคอนเทนต์สินค้าและ TikTok Shop ด้วย AI</p>
-      <div class="points">
-        <div class="point"><span class="check">✓</span> ประหยัดเวลา ช่วยคิดคอนเทนต์สินค้า</div>
-        <div class="point"><span class="check">✓</span> เพิ่มโอกาสค้นเจอด้วย SEO ที่ตรงสินค้า</div>
-        <div class="point"><span class="check">✓</span> ใช้งานง่าย เหมาะสำหรับร้านค้าออนไลน์</div>
-      </div>
-      <br>
-      <button id="startBtn" class="btn btn-main">เริ่มต้นใช้งานฟรี</button>
-      <p style="font-size:13px">Login with TikTok เพื่อเริ่มใช้งาน</p>
+      <h3 style="margin:0">nadechshop <span class="badge">Sandbox profile</span></h3>
+      <p><b>Profile link:</b> https://www.tiktok.com/@nadechshop</p>
+      <p><b>Bio:</b> Product content and SEO tools for online sellers.</p>
+      <p><b>Verified status:</b> No</p>
     </div>
-    <div class="mock">
-      <div class="chart">
-        <div class="bar" style="height:80px"></div><div class="bar" style="height:130px"></div><div class="bar" style="height:170px"></div><div class="bar" style="height:220px"></div>
-      </div>
-    </div>
-  </section>
+  </div>
+  <button id="goTool" class="btn btn-main">ไปที่เครื่องมือสร้าง SEO</button>
+</section>
 
-  <section id="success" class="card" style="display:none;text-align:center">
-    <div style="font-size:70px;color:#22c55e">✓</div>
-    <h2>เข้าสู่ระบบสำเร็จ!</h2>
-    <p>ยินดีต้อนรับกลับมา พร้อมสร้างคอนเทนต์สำหรับสินค้าแล้ว</p>
-    <button id="goApp" class="btn btn-main" style="max-width:320px">ไปที่เครื่องมือสร้าง SEO</button>
-  </section>
+<section id="tool" class="card hidden">
+  <h2>สร้าง SEO สำหรับสินค้า</h2>
+  <label>ชื่อสินค้า *</label><input id="product" placeholder="เช่น รองเท้าวิ่งผู้ชาย">
+  <label>ข้อมูลเพิ่มเติม</label><textarea id="details" placeholder="เช่น น้ำหนักเบา ระบายอากาศดี สีดำ ไซส์ 39-45"></textarea>
+  <br><br><button id="generate" class="btn btn-main">Generate SEO</button>
+</section>
 
-  <section id="app" class="app">
-    <div class="card">
-      <h2>สร้าง SEO สำหรับสินค้า</h2>
-      <label>ชื่อสินค้า <span class="req">*</span></label>
-      <input id="productName" placeholder="เช่น รองเท้าวิ่งผู้ชาย" />
-      <label>ข้อมูลเพิ่มเติม (ไม่บังคับ)</label>
-      <textarea id="extra" placeholder="เช่น คุณสมบัติเด่น กลุ่มเป้าหมาย ขนาด สี เป็นต้น"></textarea>
-      <br><br>
-      <button id="genBtn" class="btn btn-main">Generate SEO</button>
-    </div>
+<section id="loading" class="card hidden" style="text-align:center"><h3>กำลังสร้าง SEO...</h3><div class="loader"></div></section>
 
-    <div id="results" class="card" style="display:none">
-      <div class="tabs">
-        <div class="tab active" data-tab="all">ทั้งหมด</div>
-        <div class="tab" data-tab="title">Title</div>
-        <div class="tab" data-tab="desc">Description</div>
-        <div class="tab" data-tab="keys">Keywords</div>
-        <div class="tab" data-tab="tags">Hashtags</div>
-      </div>
-      <div id="all" class="tabContent"></div>
-      <div id="title" class="tabContent" style="display:none"></div>
-      <div id="desc" class="tabContent" style="display:none"></div>
-      <div id="keys" class="tabContent" style="display:none"></div>
-      <div id="tags" class="tabContent" style="display:none"></div>
-      <button id="copyBtn" class="btn btn-light">คัดลอกทั้งหมด</button>
-      <button id="newBtn" class="btn btn-main" style="margin-top:10px">สร้างใหม่</button>
-    </div>
-  </section>
+<section id="results" class="card hidden">
+  <h2>ผลลัพธ์ SEO</h2>
+  <div class="result"><b>Title</b><p id="rTitle"></p></div>
+  <div class="result"><b>Description</b><p id="rDesc"></p></div>
+  <div class="result"><b>Keywords</b><div id="rKeys" class="chips"></div></div>
+  <div class="result"><b>Hashtags</b><div id="rTags" class="chips"></div></div>
+</section>
 </main>
-
-<div id="loading" class="modal"><div class="modalCard"><h3>AI กำลังสร้าง SEO ให้คุณ...</h3><p>กรุณารอสักครู่</p><div class="loader"></div></div></div>
-<div id="toast" class="toast">คัดลอกเรียบร้อยแล้ว!</div>
-
 <footer>
-  <div class="links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div>
+  <img src="app-icon.png" alt="AI Product SEO icon" style="width:44px;height:44px;border-radius:10px;vertical-align:middle;margin-right:8px">
+  © 2026 AI Product SEO · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
 </footer>
-
 <script>
-const home=document.getElementById('home'), success=document.getElementById('success'), app=document.getElementById('app');
-function fakeLogin(){home.style.display='none';success.style.display='block';document.getElementById('loginBtn').style.display='none';document.getElementById('userBox').style.display='flex'}
-document.getElementById('loginBtn').onclick=fakeLogin;document.getElementById('startBtn').onclick=fakeLogin;
-document.getElementById('goApp').onclick=()=>{success.style.display='none';app.style.display='block';};
-function buildSEO(name, extra){
-  const clean=name.trim()||'สินค้า';
-  const keys=[clean, clean+' ราคาดี', clean+' คุณภาพดี', clean+' TikTok Shop', clean+' รีวิว', clean+' พร้อมส่ง'];
-  const tags=['#'+clean.replaceAll(' ',''),'#รีวิวสินค้า','#ของดีบอกต่อ','#TikTokShop','#ช้อปออนไลน์'];
-  return {
-    title:`${clean} คุณภาพดี ใช้งานคุ้มค่า พร้อมส่ง`,
-    desc:`${clean} ดีไซน์ใช้งานง่าย เหมาะสำหรับลูกค้าที่ต้องการสินค้าคุณภาพดี ${extra?extra+' ':''}ช่วยให้การใช้งานสะดวกขึ้น คุ้มค่า และเหมาะสำหรับการสั่งซื้อออนไลน์ผ่าน TikTok Shop`,
-    keys, tags
-  }
-}
-function render(r){
-  const html=`<div class="resultBox"><b>Title</b><p>${r.title}</p></div>
-  <div class="resultBox"><b>Description</b><p>${r.desc}</p></div>
-  <div class="resultBox"><b>Keywords</b><div class="chips">${r.keys.map(x=>`<span class="chip">${x}</span>`).join('')}</div></div>
-  <div class="resultBox"><b>Hashtags</b><div class="chips">${r.tags.map(x=>`<span class="chip">${x}</span>`).join('')}</div></div>`;
-  all.innerHTML=html; title.innerHTML=`<div class="resultBox"><b>Title</b><p>${r.title}</p></div>`;
-  desc.innerHTML=`<div class="resultBox"><b>Description</b><p>${r.desc}</p></div>`;
-  keys.innerHTML=`<div class="chips">${r.keys.map(x=>`<span class="chip">${x}</span>`).join('')}</div>`;
-  tags.innerHTML=`<div class="chips">${r.tags.map(x=>`<span class="chip">${x}</span>`).join('')}</div>`;
-  window.lastText=[r.title,r.desc,r.keys.join(', '),r.tags.join(' ')].join('\n\n');
-}
-document.getElementById('genBtn').onclick=()=>{
-  const name=document.getElementById('productName').value.trim();
-  if(!name){alert('กรุณากรอกชื่อสินค้า');return}
-  loading.style.display='flex';
-  setTimeout(()=>{loading.style.display='none';render(buildSEO(name,document.getElementById('extra').value));results.style.display='block';results.scrollIntoView({behavior:'smooth'});},1200)
-}
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');
-  document.querySelectorAll('.tabContent').forEach(x=>x.style.display='none');document.getElementById(t.dataset.tab).style.display='block';
-});
-copyBtn.onclick=async()=>{await navigator.clipboard.writeText(window.lastText||'');toast.style.display='block';setTimeout(()=>toast.style.display='none',2000)}
-newBtn.onclick=()=>{productName.value='';extra.value='';results.style.display='none';productName.focus()}
+const home=document.getElementById('home'),success=document.getElementById('loginSuccess'),tool=document.getElementById('tool');
+function loginDemo(){home.classList.add('hidden');success.classList.remove('hidden');loginBtn.classList.add('hidden');window.scrollTo(0,0)}
+loginBtn.onclick=loginDemo;startBtn.onclick=loginDemo;
+goTool.onclick=()=>{success.classList.add('hidden');tool.classList.remove('hidden');window.scrollTo(0,0)};
+generate.onclick=()=>{
+ const p=product.value.trim(); if(!p){alert('กรุณากรอกชื่อสินค้า');return}
+ tool.classList.add('hidden');loading.classList.remove('hidden');
+ setTimeout(()=>{
+  loading.classList.add('hidden');results.classList.remove('hidden');
+  rTitle.textContent=p+' คุณภาพดี ใช้งานคุ้มค่า พร้อมส่ง';
+  rDesc.textContent=p+' เหมาะสำหรับผู้ที่ต้องการสินค้าคุณภาพดี '+(details.value||'ใช้งานสะดวกและคุ้มค่า')+' เหมาะสำหรับการนำเสนอสินค้าออนไลน์และ TikTok Shop';
+  const keys=[p,p+' ราคาดี',p+' รีวิว',p+' พร้อมส่ง','TikTok Shop'];
+  const tags=['#'+p.replaceAll(' ',''),'#รีวิวสินค้า','#TikTokShop','#ของดีบอกต่อ','#ช้อปออนไลน์'];
+  rKeys.innerHTML=keys.map(x=>'<span class="chip">'+x+'</span>').join('');
+  rTags.innerHTML=tags.map(x=>'<span class="chip">'+x+'</span>').join('');
+  window.scrollTo(0,0);
+ },1000)
+};
 </script>
-</body>
-</html>
+</body></html>

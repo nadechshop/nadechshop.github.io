@@ -1,0 +1,29 @@
+AI PRODUCT SEO — TIKTOK APP REVIEW DEMO SCRIPT
+
+Important setup before recording:
+1. Remove the video.list scope unless the app genuinely reads and displays TikTok videos.
+2. Keep only the scope demonstrated in this video: user.info.profile.
+3. Record in TikTok Sandbox or clearly identify the flow as a Sandbox/Mockup Demo.
+4. Record continuously without cutting important steps.
+
+Recommended 45–60 second recording:
+00:00 Open https://nadechshop.github.io/
+00:03 Show the app icon in the browser tab and in the website header.
+00:07 Open Privacy Policy briefly and show the same icon in the browser tab and page header.
+00:12 Return to Home.
+00:15 Tap “Login with TikTok.”
+00:18 Explain: “This is the TikTok Sandbox/Mockup login flow used for app review.”
+00:22 Show the connected profile card.
+00:24 Point out the exact user.info.profile fields:
+      - profile web link
+      - bio description
+      - verified status
+00:31 Tap “Go to SEO Tool.”
+00:34 Enter product name: รองเท้าวิ่งผู้ชาย
+00:37 Enter details: น้ำหนักเบา ระบายอากาศดี พื้นนุ่ม กันลื่น สีดำ ไซส์ 39-45
+00:43 Tap “Generate SEO.”
+00:46 Show Title, Description, Keywords, and Hashtags.
+00:55 End recording.
+
+Reviewer explanation:
+“AI Product SEO uses TikTok Login for user authentication. The user.info.profile scope is used only to display the authorized TikTok profile web link, biography description, and verification status in the connected profile section. The app does not use video.list, so that scope has been removed.”
