@@ -1,18 +1,10 @@
-# AI Product SEO — Review Ready
+# AI Product SEO — Full Web App
 
-Upload all files in this folder to the root of the `nadechshop.github.io` repository.
+This version opens directly to a functional product SEO dashboard. It is not a landing page and does not require login before using the main tool.
 
-Files:
+Files to upload to the repository root:
 - index.html
 - privacy.html
 - terms.html
 - app-icon.png
 - favicon.png
-- favicon.ico
-
-Before resubmitting:
-1. Return the TikTok app to Draft.
-2. Remove `video.list` unless the app truly uses it.
-3. Keep and demonstrate `user.info.profile`.
-4. Upload a new continuous demo video using DEMO-VIDEO-SCRIPT.txt.
-5. Use the same `app-icon.png` in TikTok Developer Basic Information.
